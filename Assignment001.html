@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Q1.
+        let a=34;
+        let b=a++ + a-- + (a-- + ++a);
+        alert(a);
+        alert(b);
+
+        // Q2.What is identifier
+        // Identifier is used to identify anything uniquely ....like make a variable -- let name =" Aishu" here name specify this is the name of a person.
+
+        //Q 3.why do we use operator?
+        // operators are used to perform some  operations on operands.Operator is used to check the condition or action such that we will identify the logic will be execute or not. like arithmetic,logical,bitwise.
+
+        //Q 4.
+        // Find out the binary of 8,9,102,98
+        //  8- 1000
+        //  9- 1001
+        //  102- 1100110
+        //  98- 1100010
+
+         // Q5.
+         let a1=10;
+         console.log(a1+=20); //output=30
+
+         // Q6. Create 4 container inside a single container. Each container having content like Red,Blue, Green,Yellow.When we hover on their div container, color will be change their name accordingly.
+
+         // Q7. ##Question 7.
+        //   Bit Wise operator
+        //   let b=43;
+        //   let c=20;
+        //   find out the console.log(b&c)
+        //   find out the console.log(b|c)
+
+        //solution - first find the binay of 43
+//         so binay of 43 = 101011 
+//         Now find the binary of 20 = 10100
+
+
+//         so firt solution for (&)
+
+//         101011
+//         010100  for and we have to multiply these two
+//     ---------------
+//         000000     -------------->0
+
+
+//         for OR(|)
+
+//         101011
+//         010100 
+//    --------------------
+//         111111        ------------> 63
+
+
+
+
+
+    </script>
+
+    <style>
+        .mainContainer{
+           background-color: yellow;
+            height: 400px;
+            width: 1500px;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid;
+            margin-top: 190px;
+        }
+
+        .firstdiv{
+            background-color: white;
+
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            text-align: center;
+            margin: 70px;
+            
+           }
+
+        .seconddiv{
+            background-color: white;
+
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            text-align: center;
+            margin: 70px;
+
+        }
+
+        .thirddiv{
+            background-color: white;
+
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            text-align: center;
+            margin: 70px;
+
+        }
+
+       .forthdiv{
+        background-color: white;
+
+        height: 200px;
+            width: 200px;
+            border: 2px solid;
+            text-align: center;
+            margin: 70px;
+
+       }
+
+
+       div.firstdiv:hover{
+        background-color: red;
+       }
+
+       div.seconddiv:hover{
+        background-color: blue;
+       }
+
+       div.thirddiv:hover{
+        background-color: green;
+       }
+
+       div.forthdiv:hover{
+        background-color: yellow;
+       }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="mainContainer">
+
+        <div class="firstdiv">Red</div>
+        <div class="seconddiv">Blue</div>
+        <div class="thirddiv">Green</div>
+        <div class="forthdiv">Yellow</div>
+
+    </div>
+
+    
+</body>
+</html>
