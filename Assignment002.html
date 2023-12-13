@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script>
+
+        // # Question 2.Create an input filled and button , when we write any input string inside the text field, string will be shown into alert.
+
+      function  ShowMyName(){
+        let name=document.getElementById("first").value;
+        alert(name);
+
+        }
+
+      //  ## Question 3.Create an attractive marks calualation App, having following fileds1.Math -input filed with proper place holder 2.Science -input filed with proper place holder 3.Compuer -input filed with proper place holder 4.History -input filed with proper place holder then, create a button to calculate the total marks and the total percentage which will shown inside the input box.
+
+      function SunAndPercent(){
+        debugger;
+        let mathsMarks=document.getElementById("firsts").value;
+        let math=Number(mathsMarks);
+        let scienceMarks=document.getElementById("second").value;
+        let science=Number(scienceMarks);
+        let computerMarks=document.getElementById("third").value;
+        let computer=Number(computerMarks);
+        let historyMarks=document.getElementById("forth").value;
+        let history=Number(historyMarks);
+        document.getElementById("TotalMarks").value=math+science+computer+history;
+        let AllMarks=document.getElementById("TotalMarks").value;
+       
+        document.getElementById("percentages").value=(AllMarks/400)*100;
+        // alert(TotalMarks);
+        // alert(percentages);
+        
+
+      }
+
+     // ## Question 4.Write a program to check the number is positive or negative.
+
+    //  let num=prompt("Enter number...");
+
+    
+     function myFunc(){
+       //(num>=0) ? alert("positive"):alert("negative");
+
+     }
+     myFunc();
+
+
+    </script>
+
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+          }
+
+     .mainContainer{
+        display: flex;
+       
+        background-color: black;
+        height: 70px;
+        width: 100%;
+     }
+
+     input{
+      border-radius: 
+      10px;width: 411px;
+      margin: 18px; 
+      padding: 7px
+
+     }
+
+     .div1{
+      border: 2px double red;
+      width: 600px;
+      padding: 30px;
+      background-color: powderblue;
+      box-shadow: 2px 4px grey;
+      border-radius: 10px;margin-top: 50px;
+     }
+     .div2{
+      height: 30px; 
+      width: 50px;
+     }
+
+     .div3{
+      color: white;
+      margin-left: 66px;
+
+     }
+
+     .img1{
+      height:20px ;
+      width:40px ;
+       margin-top: 25px;
+       margin-left: 317px;
+     }
+
+     .lastdiv{
+      margin-left: 66px;
+      margin-top: 22px; 
+      color:  white;
+     }
+   
+            
+    
+   
+   
+
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="mainContainer">
+       <div><img src="/resources/amazonone.png" height="70x" width="240px"></div>
+
+       <div class="div3">
+        <i class="fa-solid fa-location-dot"></i>
+        Deliver to KUMAR<br>
+        Patna 800011
+        
+      </div>
+
+      
+
+       <div><input type="text" ></div>
+       <div class="div2"><i class="fa-sharp fa-solid fa-magnifying-glass" style="color: #511f24;margin-left: -41px;margin-top: 27px;"></i></div>
+
+       <div style=" margin-left: -516px; margin-right: 75px;
+        padding: 24px;">
+        <select>
+            <option>All</option>
+            <option>1</option>
+            <option>1</option>
+            <option>1</option>
+        </select>
+
+
+       </div>
+
+       <div><img class="img1" src="/resources/flag2.jpg"></div>
+       <select style="height: 10px;margin-top: 29px;margin-left: 6px;">
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+       </select>
+
+       <div style="color: white;    margin-left: 20px; margin-top: 25px;">Accounts & Lists</div>
+       <select style="height: 10px;margin-top: 29px;margin-left: 6px;">
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+       </select>
+
+       <div  class="lastdiv">
+    
+        Returns & Orders
+       </div>
+    
+    </div>
+
+   
+
+ 
+
+    
+    <center>
+   
+
+    <input type="text" id="first" style="margin-top: 84px;background-color: palevioletred;"><br><br>
+    <button onclick="ShowMyName()" style="margin-bottom: 20px;color: blueviolet;background-color: black;border-radius: 8px;">Click me</button>
+</center>
+<hr>
+<hr>
+<center>
+<div  class="div1">
+
+<input type="text" id="firsts" placeholder="Enter Math Marks" style="margin-top: 50px;"><br><br>
+<input type="text" id="second" placeholder="Enter Science Marks"><br><br>
+<input type="text" id="third" placeholder="Enter Computer Marks"><br><br>
+<input type="text" id="forth" placeholder="Enter History Marks"><br><br>
+<button onclick="SunAndPercent()" style="background-color:  blue;height: 40px;width: 150px;color: white;border-radius: 7px;">calculate</button><br><br>
+<input type="text" id="TotalMarks" placeholder="Total Marks:-">
+<input type="text" id="percentages" placeholder="total %:">
+
+</div>
+</center>
+
+
+    
+</body>
+</html>
