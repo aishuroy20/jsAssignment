@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Q1. Try to make program in JavaScript such that, we create an Animal array of object having animal names, and no of legs. when user input number of legs then name of the animal will be shown .
+
+       let userInput=prompt("Enter AnimalAndBird legs");
+
+        const AnimaAndBirdInfo=[
+            {
+                Name:"Dog",
+                legs:4,
+            },
+
+            {
+                name:"Peacock",
+                legs:2,
+            },
+
+            {
+                name:"Snake",
+                legs:0,
+            },
+
+           
+    ];
+     
+     if(userInput == 4){
+        alert("Dog");
+     }else if(userInput==2 ){
+        alert("Peacock")
+     }else{
+        alert("snake");
+     }
+    </script>
+    <style>
+
+        .mainDiv{
+            display: flex;
+           
+
+        }
+
+        .firstDiv{
+            border: 2px solid black;
+            height: 400px;
+            width: 50%;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: powderblue;
+            box-shadow: 2px 4px blue;
+           
+            
+
+        }
+
+        .secondDiv{
+            border: 2px solid black;
+            height: 200px;
+            width:100%;
+            border-radius: 5px;
+            background-color: powderblue;
+            box-shadow: 2px 4px blue;
+            
+
+        }
+
+        .thirdDiv{
+            border: 2px solid  black;
+            height: 180px;
+            margin-left: 70%;
+            margin-top: 10px;
+            width: 30%;
+            border-radius: 5px;
+            background-color: powderblue;
+            box-shadow: 2px 4px blue;
+            
+
+        }
+        .parentdiv
+        {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="mainDiv">
+            <div class="firstDiv">
+             <marquee> <u>Two</u></marquee>
+
+            </div>
+
+   
+    <div class="parentdiv">
+            <div class="secondDiv">
+             <marquee>One</marquee>
+     
+            </div>
+     
+            <div class="thirdDiv">
+             <marquee>Three</marquee>
+     
+             </div>
+
+    </div>
+
+
+</div>
+    
+</body>
+</html>
