@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Q 1.## Write a javascript program to write you name and convert it into lower case and upper case
+
+        let myName="Aishwarya Rai";
+        // alert(myName.toUpperCase());  // output AISHWARYA RAI
+        // alert(myName.toLowerCase());   // output aishwarya rai
+
+//Q 2. Write a javascript program to count number of space in given String let str="A simple sentence is a sentence that consists of just one independent clause"
+
+let str="A simple sentence is a sentence that consists of just one independent clause";
+let numberOfSpaces=str.split(" ").length-1;
+//alert(numberOfSpaces);
+
+//Q3.## Write a javascript program to replace the word as follows
+// let str="A simple sentence is a sentence that consists of just one independent clause"
+// -is will replace from Ankit
+// -just is replace from Kumar
+
+let str1 ="A simple sentence is a sentence that consists of just one independent clause";
+let nreStr=str
+.replace("is","Ankit")
+.replace("just","kumar");
+alert(nreStr);
+//Q4. Write a javascript program to find out the duplicate words.
+// let str="Ram is a good boy is a good is is a"
+
+let str2="Ram is a good boy is a good is is a";
+let newstr= str2.split(" ");
+let countIs=0;
+let countA=0;
+let countgoog=0;
+for(let i=0;i<str2.length;i++){
+    if(newstr[i]==="is")
+    {
+        countIs++;
+    }else if(newstr[i]==="a"){
+        countA++;
+    }else if(newstr[i]==="good"){
+        countgoog++;
+    }
+
+    
+}
+alert("Is found "+countIs+" Times");
+alert(" a found" +countA+" Times");
+alert("good found"+ countgoog+" Times");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
